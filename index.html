@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SerWizz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">SERWIZZ <span class="logo-emoji" aria-hidden="true">👌</span></div>
+            <nav>
+                <ul>
+                    <li><a class="login" href="#">Log in / Sign up</a></li>
+                    <li><a class="events" href="#">Events & Magazine</a></li>
+                    <li><a class="lang" href="#">EN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- News Slider -->
+    <section class="news-slider">
+        <h2>NEWS</h2>
+        <div class="cards">
+            <a href="#" class="card">
+                <img src="assets/Baines1.png" alt="BAÏNES swimwear">
+                <div class="card-text">
+                    <p>Drop 2 is here – Oh la la! 🔥</p>
+                </div>
+            </a>
+            <div class="card">
+                <img src="assets/Morning1.png" alt="MORNING MESS THERAPY">
+                <div class="card-text">
+                    <p>NEW AW25 Stock READY TO SHIP!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/Halcyon1.png" alt="Halcyon Nights">
+                <div class="card-text">
+                    <p>Giddy up! ✨ Our Furry Friend is Racing Out the Door! 💫</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/Iku1.png" alt="Iku Baby">
+                <div class="card-text">
+                    <p>Be Holiday-Ready with Iku Baby</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/TheSunday1.png" alt="The Sunday Collective">
+                <div class="card-text">
+                    <p>Ready to Be Ordered: FW25 Weather Layering!</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/seed/news1/400/300" alt="New Collection Arrived">
+                <div class="card-text">
+                    <p>Discover the latest trends for the new season.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/seed/news2/400/300" alt="Sustainable Choices">
+                <div class="card-text">
+                    <p>Eco-friendly materials are now in focus for AW25.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/seed/news3/400/300" alt="Summer Vibes">
+                <div class="card-text">
+                    <p>Get ready for the sun with our vibrant new outfits.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/seed/news4/400/300" alt="Designer Spotlight">
+                <div class="card-text">
+                    <p>An exclusive interview with a rising star in kid's fashion.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/seed/news5/400/300" alt="Back to School">
+                <div class="card-text">
+                    <p>Stylish and comfortable options for the little ones.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories / Filters -->
+    <section class="categories">
+        <ul class="tabs">
+            <li><button class="tab-link active" data-target="all-brands">See all brands</button></li>
+            <li><button class="tab-link" data-target="fashion-more">Fashion & more</button></li>
+            <li><button class="tab-link" data-target="leisure-fun">Leisure & Fun</button></li>
+            <li><button class="tab-link" data-target="wellness-care">Wellness & Care</button></li>
+            <li><button class="tab-link" data-target="babygear">Babygear</button></li>
+            <li><button class="tab-link" data-target="maternity">Maternity</button></li>
+            <li><button class="tab-link" data-target="man-woman">Man & Woman</button></li>
+            <li><button class="filters-toggle" type="button">Advanced filters</button></li>
+        </ul>
+        <div class="search-sort">
+            <label class="stock-check"><input type="checkbox"> <span>Available in stock</span></label>
+            <button class="fav-btn" type="button" aria-label="Favorites">❤</button>
+            <a class="az-link" href="#">A-Z</a>
+            <div class="search-wrap">
+                <input class="search-input" type="text" placeholder="Search...">
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Filters (opens under tabs) -->
+    <section class="advanced-filters">
+        <div class="filters-header">ACTIVE FILTERS :</div>
+        <div class="filters-grid">
+            <div class="filter-group">
+                <div class="group-title">Collections online</div>
+                <label class="check">
+                    <input type="checkbox"> Pre-orders
+                </label>
+                <label class="check">
+                    <input type="checkbox"> Available in stock
+                </label>
+            </div>
+            <div class="filter-group">
+                <div class="group-title">Labels</div>
+                <label class="check"><input type="checkbox"> Organic</label>
+                <label class="check"><input type="checkbox"> Recycling / Upcycling</label>
+                <label class="check"><input type="checkbox"> Sustainable</label>
+                <label class="check"><input type="checkbox"> Ethical & Fair trade</label>
+            </div>
+            <div class="filter-group">
+                <div class="group-title">Country</div>
+                <div class="select-wrap">
+                    <select>
+                        <option>Filter by country</option>
+                        <option>United Kingdom</option>
+                        <option>Germany</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Spain</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="filters-actions">
+            <button class="apply-btn">APPLY FILTERS</button>
+        </div>
+    </section>
+
+    <!-- Tab Panels -->
+    <section class="tab-panels">
+        <div id="all-brands" class="tab-panel active">
+            <div class="products">
+                <!-- Fashion & more -->
+                <div class="product-card" data-id="fashion1">
+                    <img src="https://picsum.photos/seed/fashion1/500/736" alt="Fashion Product 1">
+                    <span class="brand">Aura Collective</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion2">
+                    <img src="https://picsum.photos/seed/fashion2/500/736" alt="Fashion Product 2">
+                    <span class="brand">Solstice Wear</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion3">
+                    <img src="https://picsum.photos/seed/fashion3/500/736" alt="Fashion Product 3">
+                    <span class="brand">Ember & Ash</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion4">
+                    <img src="https://picsum.photos/seed/fashion4/500/736" alt="Fashion Product 4">
+                    <span class="brand">Terra Threads</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion5">
+                    <img src="https://picsum.photos/seed/fashion5/500/736" alt="Fashion Product 5">
+                    <span class="brand">Celeste Apparel</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion6">
+                    <img src="https://picsum.photos/seed/fashion6/500/736" alt="Fashion Product 6">
+                    <span class="brand">Nomad Style</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion7">
+                    <img src="https://picsum.photos/seed/fashion7/500/736" alt="Fashion Product 7">
+                    <span class="brand">Oasis Couture</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion8">
+                    <img src="https://picsum.photos/seed/fashion8/500/736" alt="Fashion Product 8">
+                    <span class="brand">Lunar Loft</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <!-- Leisure & Fun -->
+                <div class="product-card" data-id="leisure1">
+                    <img src="https://picsum.photos/seed/leisure1/500/736" alt="Leisure Product 1">
+                    <span class="brand">Joyful Play</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure2">
+                    <img src="https://picsum.photos/seed/leisure2/500/736" alt="Leisure Product 2">
+                    <span class="brand">FunQuest</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure3">
+                    <img src="https://picsum.photos/seed/leisure3/500/736" alt="Leisure Product 3">
+                    <span class="brand">Hobby Hive</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure4">
+                    <img src="https://picsum.photos/seed/leisure4/500/736" alt="Leisure Product 4">
+                    <span class="brand">Creative Sparks</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure5">
+                    <img src="https://picsum.photos/seed/leisure5/500/736" alt="Leisure Product 5">
+                    <span class="brand">Wonder Wheels</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure6">
+                    <img src="https://picsum.photos/seed/leisure6/500/736" alt="Leisure Product 6">
+                    <span class="brand">Puzzle Planet</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure7">
+                    <img src="https://picsum.photos/seed/leisure7/500/736" alt="Leisure Product 7">
+                    <span class="brand">Game Galaxy</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure8">
+                    <img src="https://picsum.photos/seed/leisure8/500/736" alt="Leisure Product 8">
+                    <span class="brand">Artful Antics</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure9">
+                    <img src="https://picsum.photos/seed/leisure9/500/736" alt="Leisure Product 9">
+                    <span class="brand">Kiddie Kraft</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure10">
+                    <img src="https://picsum.photos/seed/leisure10/500/736" alt="Leisure Product 10">
+                    <span class="brand">Toy Trove</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <!-- Wellness & Care -->
+                <div class="product-card" data-id="wellness1">
+                    <img src="https://picsum.photos/seed/wellness1/500/736" alt="Wellness Product 1">
+                    <span class="brand">Pure Serenity</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness2">
+                    <img src="https://picsum.photos/seed/wellness2/500/736" alt="Wellness Product 2">
+                    <span class="brand">NaturaBloom</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness3">
+                    <img src="https://picsum.photos/seed/wellness3/500/736" alt="Wellness Product 3">
+                    <span class="brand">Vitality Essentials</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness4">
+                    <img src="https://picsum.photos/seed/wellness4/500/736" alt="Wellness Product 4">
+                    <span class="brand">Glow & Grace</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness5">
+                    <img src="https://picsum.photos/seed/wellness5/500/736" alt="Wellness Product 5">
+                    <span class="brand">Earthly Elixirs</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness6">
+                    <img src="https://picsum.photos/seed/wellness6/500/736" alt="Wellness Product 6">
+                    <span class="brand">Tranquil Touch</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness7">
+                    <img src="https://picsum.photos/seed/wellness7/500/736" alt="Wellness Product 7">
+                    <span class="brand">Aura Wellness</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness8">
+                    <img src="https://picsum.photos/seed/wellness8/500/736" alt="Wellness Product 8">
+                    <span class="brand">BioBalance</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness9">
+                    <img src="https://picsum.photos/seed/wellness9/500/736" alt="Wellness Product 9">
+                    <span class="brand">Soothing Scents</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <!-- Babygear -->
+                <div class="product-card" data-id="babygear1">
+                    <img src="https://picsum.photos/seed/babygear1/500/736" alt="Babygear Product 1">
+                    <span class="brand">Little Sprouts</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear2">
+                    <img src="https://picsum.photos/seed/babygear2/500/736" alt="Babygear Product 2">
+                    <span class="brand">Cuddle Cub</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear3">
+                    <img src="https://picsum.photos/seed/babygear3/500/736" alt="Babygear Product 3">
+                    <span class="brand">Tiny Steps</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear4">
+                    <img src="https://picsum.photos/seed/babygear4/500/736" alt="Babygear Product 4">
+                    <span class="brand">Dreamy Baby</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear5">
+                    <img src="https://picsum.photos/seed/babygear5/500/736" alt="Babygear Product 5">
+                    <span class="brand">Snuggle Bug</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear6">
+                    <img src="https://picsum.photos/seed/babygear6/500/736" alt="Babygear Product 6">
+                    <span class="brand">Pipsqueak Gear</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear7">
+                    <img src="https://picsum.photos/seed/babygear7/500/736" alt="Babygear Product 7">
+                    <span class="brand">Baby Bloom</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear8">
+                    <img src="https://picsum.photos/seed/babygear8/500/736" alt="Babygear Product 8">
+                    <span class="brand">Nestling Needs</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear9">
+                    <img src="https://picsum.photos/seed/babygear9/500/736" alt="Babygear Product 9">
+                    <span class="brand">Infant Innovations</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear10">
+                    <img src="https://picsum.photos/seed/babygear10/500/736" alt="Babygear Product 10">
+                    <span class="brand">Toddler Trove</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear11">
+                    <img src="https://picsum.photos/seed/babygear11/500/736" alt="Babygear Product 11">
+                    <span class="brand">Cherub Comforts</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear12">
+                    <img src="https://picsum.photos/seed/babygear12/500/736" alt="Babygear Product 12">
+                    <span class="brand">Little Star</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <!-- Maternity -->
+                <div class="product-card" data-id="maternity1">
+                    <img src="https://picsum.photos/seed/maternity1/500/736" alt="Maternity Product 1">
+                    <span class="brand">Mama Bloom</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity2">
+                    <img src="https://picsum.photos/seed/maternity2/500/736" alt="Maternity Product 2">
+                    <span class="brand">Bump & Beyond</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity3">
+                    <img src="https://picsum.photos/seed/maternity3/500/736" alt="Maternity Product 3">
+                    <span class="brand">Nurture Wear</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity4">
+                    <img src="https://picsum.photos/seed/maternity4/500/736" alt="Maternity Product 4">
+                    <span class="brand">The Motherhood Co.</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity5">
+                    <img src="https://picsum.photos/seed/maternity5/500/736" alt="Maternity Product 5">
+                    <span class="brand">Everly Grey</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity6">
+                    <img src="https://picsum.photos/seed/maternity6/500/736" alt="Maternity Product 6">
+                    <span class="brand">Stork Style</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity7">
+                    <img src="https://picsum.photos/seed/maternity7/500/736" alt="Maternity Product 7">
+                    <span class="brand">Radiant Mama</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity8">
+                    <img src="https://picsum.photos/seed/maternity8/500/736" alt="Maternity Product 8">
+                    <span class="brand">Bella Materna</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity9">
+                    <img src="https://picsum.photos/seed/maternity9/500/736" alt="Maternity Product 9">
+                    <span class="brand">Kindred Bravely</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <!-- Man & Woman -->
+                <div class="product-card" data-id="manwoman1">
+                    <img src="https://picsum.photos/seed/manwoman1/500/736" alt="Man & Woman Product 1">
+                    <span class="brand">Urban Threads</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman2">
+                    <img src="https://picsum.photos/seed/manwoman2/500/736" alt="Man & Woman Product 2">
+                    <span class="brand">Apex Attire</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman3">
+                    <img src="https://picsum.photos/seed/manwoman3/500/736" alt="Man & Woman Product 3">
+                    <span class="brand">Elysian Styles</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman4">
+                    <img src="https://picsum.photos/seed/manwoman4/500/736" alt="Man & Woman Product 4">
+                    <span class="brand">Vanguard Wear</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman5">
+                    <img src="https://picsum.photos/seed/manwoman5/500/736" alt="Man & Woman Product 5">
+                    <span class="brand">Nova Mode</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman6">
+                    <img src="https://picsum.photos/seed/manwoman6/500/736" alt="Man & Woman Product 6">
+                    <span class="brand">Sterling & Co.</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman7">
+                    <img src="https://picsum.photos/seed/manwoman7/500/736" alt="Man & Woman Product 7">
+                    <span class="brand">Femme & Fierce</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman8">
+                    <img src="https://picsum.photos/seed/manwoman8/500/736" alt="Man & Woman Product 8">
+                    <span class="brand">Gentleman's Cut</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman9">
+                    <img src="https://picsum.photos/seed/manwoman9/500/736" alt="Man & Woman Product 9">
+                    <span class="brand">Chic & Charisma</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman10">
+                    <img src="https://picsum.photos/seed/manwoman10/500/736" alt="Man & Woman Product 10">
+                    <span class="brand">The Modern Gent</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman11">
+                    <img src="https://picsum.photos/seed/manwoman11/500/736" alt="Man & Woman Product 11">
+                    <span class="brand">Poise & Power</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+            </div>
+        </div>
+        <div id="fashion-more" class="tab-panel">
+            <div class="products">
+                <div class="product-card" data-id="fashion1">
+                    <img src="https://picsum.photos/seed/fashion1/500/736" alt="Fashion Product 1">
+                    <span class="brand">Aura Collective</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion2">
+                    <img src="https://picsum.photos/seed/fashion2/500/736" alt="Fashion Product 2">
+                    <span class="brand">Solstice Wear</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion3">
+                    <img src="https://picsum.photos/seed/fashion3/500/736" alt="Fashion Product 3">
+                    <span class="brand">Ember & Ash</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion4">
+                    <img src="https://picsum.photos/seed/fashion4/500/736" alt="Fashion Product 4">
+                    <span class="brand">Terra Threads</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion5">
+                    <img src="https://picsum.photos/seed/fashion5/500/736" alt="Fashion Product 5">
+                    <span class="brand">Celeste Apparel</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion6">
+                    <img src="https://picsum.photos/seed/fashion6/500/736" alt="Fashion Product 6">
+                    <span class="brand">Nomad Style</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion7">
+                    <img src="https://picsum.photos/seed/fashion7/500/736" alt="Fashion Product 7">
+                    <span class="brand">Oasis Couture</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="fashion8">
+                    <img src="https://picsum.photos/seed/fashion8/500/736" alt="Fashion Product 8">
+                    <span class="brand">Lunar Loft</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+            </div>
+        </div>
+        <div id="leisure-fun" class="tab-panel">
+            <div class="products">
+                <div class="product-card" data-id="leisure1">
+                    <img src="https://picsum.photos/seed/leisure1/500/736" alt="Leisure Product 1">
+                    <span class="brand">Joyful Play</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure2">
+                    <img src="https://picsum.photos/seed/leisure2/500/736" alt="Leisure Product 2">
+                    <span class="brand">FunQuest</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure3">
+                    <img src="https://picsum.photos/seed/leisure3/500/736" alt="Leisure Product 3">
+                    <span class="brand">Hobby Hive</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure4">
+                    <img src="https://picsum.photos/seed/leisure4/500/736" alt="Leisure Product 4">
+                    <span class="brand">Creative Sparks</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure5">
+                    <img src="https://picsum.photos/seed/leisure5/500/736" alt="Leisure Product 5">
+                    <span class="brand">Wonder Wheels</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure6">
+                    <img src="https://picsum.photos/seed/leisure6/500/736" alt="Leisure Product 6">
+                    <span class="brand">Puzzle Planet</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure7">
+                    <img src="https://picsum.photos/seed/leisure7/500/736" alt="Leisure Product 7">
+                    <span class="brand">Game Galaxy</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure8">
+                    <img src="https://picsum.photos/seed/leisure8/500/736" alt="Leisure Product 8">
+                    <span class="brand">Artful Antics</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure9">
+                    <img src="https://picsum.photos/seed/leisure9/500/736" alt="Leisure Product 9">
+                    <span class="brand">Kiddie Kraft</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="leisure10">
+                    <img src="https://picsum.photos/seed/leisure10/500/736" alt="Leisure Product 10">
+                    <span class="brand">Toy Trove</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+            </div>
+        </div>
+        <div id="wellness-care" class="tab-panel">
+            <div class="products">
+                <div class="product-card" data-id="wellness1">
+                    <img src="https://picsum.photos/seed/wellness1/500/736" alt="Wellness Product 1">
+                    <span class="brand">Pure Serenity</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness2">
+                    <img src="https://picsum.photos/seed/wellness2/500/736" alt="Wellness Product 2">
+                    <span class="brand">NaturaBloom</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness3">
+                    <img src="https://picsum.photos/seed/wellness3/500/736" alt="Wellness Product 3">
+                    <span class="brand">Vitality Essentials</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness4">
+                    <img src="https://picsum.photos/seed/wellness4/500/736" alt="Wellness Product 4">
+                    <span class="brand">Glow & Grace</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness5">
+                    <img src="https://picsum.photos/seed/wellness5/500/736" alt="Wellness Product 5">
+                    <span class="brand">Earthly Elixirs</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness6">
+                    <img src="https://picsum.photos/seed/wellness6/500/736" alt="Wellness Product 6">
+                    <span class="brand">Tranquil Touch</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness7">
+                    <img src="https://picsum.photos/seed/wellness7/500/736" alt="Wellness Product 7">
+                    <span class="brand">Aura Wellness</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness8">
+                    <img src="https://picsum.photos/seed/wellness8/500/736" alt="Wellness Product 8">
+                    <span class="brand">BioBalance</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="wellness9">
+                    <img src="https://picsum.photos/seed/wellness9/500/736" alt="Wellness Product 9">
+                    <span class="brand">Soothing Scents</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+            </div>
+        </div>
+        <div id="babygear" class="tab-panel">
+            <div class="products">
+                <div class="product-card" data-id="babygear1">
+                    <img src="https://picsum.photos/seed/babygear1/500/736" alt="Babygear Product 1">
+                    <span class="brand">Little Sprouts</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear2">
+                    <img src="https://picsum.photos/seed/babygear2/500/736" alt="Babygear Product 2">
+                    <span class="brand">Cuddle Cub</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear3">
+                    <img src="https://picsum.photos/seed/babygear3/500/736" alt="Babygear Product 3">
+                    <span class="brand">Tiny Steps</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear4">
+                    <img src="https://picsum.photos/seed/babygear4/500/736" alt="Babygear Product 4">
+                    <span class="brand">Dreamy Baby</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear5">
+                    <img src="https://picsum.photos/seed/babygear5/500/736" alt="Babygear Product 5">
+                    <span class="brand">Snuggle Bug</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear6">
+                    <img src="https://picsum.photos/seed/babygear6/500/736" alt="Babygear Product 6">
+                    <span class="brand">Pipsqueak Gear</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear7">
+                    <img src="https://picsum.photos/seed/babygear7/500/736" alt="Babygear Product 7">
+                    <span class="brand">Baby Bloom</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear8">
+                    <img src="https://picsum.photos/seed/babygear8/500/736" alt="Babygear Product 8">
+                    <span class="brand">Nestling Needs</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear9">
+                    <img src="https://picsum.photos/seed/babygear9/500/736" alt="Babygear Product 9">
+                    <span class="brand">Infant Innovations</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear10">
+                    <img src="https://picsum.photos/seed/babygear10/500/736" alt="Babygear Product 10">
+                    <span class="brand">Toddler Trove</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear11">
+                    <img src="https://picsum.photos/seed/babygear11/500/736" alt="Babygear Product 11">
+                    <span class="brand">Cherub Comforts</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="babygear12">
+                    <img src="https://picsum.photos/seed/babygear12/500/736" alt="Babygear Product 12">
+                    <span class="brand">Little Star</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+            </div>
+        </div>
+        <div id="maternity" class="tab-panel">
+            <div class="products">
+                <div class="product-card" data-id="maternity1">
+                    <img src="https://picsum.photos/seed/maternity1/500/736" alt="Maternity Product 1">
+                    <span class="brand">Mama Bloom</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity2">
+                    <img src="https://picsum.photos/seed/maternity2/500/736" alt="Maternity Product 2">
+                    <span class="brand">Bump & Beyond</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity3">
+                    <img src="https://picsum.photos/seed/maternity3/500/736" alt="Maternity Product 3">
+                    <span class="brand">Nurture Wear</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity4">
+                    <img src="https://picsum.photos/seed/maternity4/500/736" alt="Maternity Product 4">
+                    <span class="brand">The Motherhood Co.</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity5">
+                    <img src="https://picsum.photos/seed/maternity5/500/736" alt="Maternity Product 5">
+                    <span class="brand">Everly Grey</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity6">
+                    <img src="https://picsum.photos/seed/maternity6/500/736" alt="Maternity Product 6">
+                    <span class="brand">Stork Style</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity7">
+                    <img src="https://picsum.photos/seed/maternity7/500/736" alt="Maternity Product 7">
+                    <span class="brand">Radiant Mama</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity8">
+                    <img src="https://picsum.photos/seed/maternity8/500/736" alt="Maternity Product 8">
+                    <span class="brand">Bella Materna</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="maternity9">
+                    <img src="https://picsum.photos/seed/maternity9/500/736" alt="Maternity Product 9">
+                    <span class="brand">Kindred Bravely</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+            </div>
+        </div>
+        <div id="man-woman" class="tab-panel">
+            <div class="products">
+                <div class="product-card" data-id="manwoman1">
+                    <img src="https://picsum.photos/seed/manwoman1/500/736" alt="Man & Woman Product 1">
+                    <span class="brand">Urban Threads</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman2">
+                    <img src="https://picsum.photos/seed/manwoman2/500/736" alt="Man & Woman Product 2">
+                    <span class="brand">Apex Attire</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman3">
+                    <img src="https://picsum.photos/seed/manwoman3/500/736" alt="Man & Woman Product 3">
+                    <span class="brand">Elysian Styles</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman4">
+                    <img src="https://picsum.photos/seed/manwoman4/500/736" alt="Man & Woman Product 4">
+                    <span class="brand">Vanguard Wear</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman5">
+                    <img src="https://picsum.photos/seed/manwoman5/500/736" alt="Man & Woman Product 5">
+                    <span class="brand">Nova Mode</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman6">
+                    <img src="https://picsum.photos/seed/manwoman6/500/736" alt="Man & Woman Product 6">
+                    <span class="brand">Sterling & Co.</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman7">
+                    <img src="https://picsum.photos/seed/manwoman7/500/736" alt="Man & Woman Product 7">
+                    <span class="brand">Femme & Fierce</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman8">
+                    <img src="https://picsum.photos/seed/manwoman8/500/736" alt="Man & Woman Product 8">
+                    <span class="brand">Gentleman's Cut</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman9">
+                    <img src="https://picsum.photos/seed/manwoman9/500/736" alt="Man & Woman Product 9">
+                    <span class="brand">Chic & Charisma</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman10">
+                    <img src="https://picsum.photos/seed/manwoman10/500/736" alt="Man & Woman Product 10">
+                    <span class="brand">The Modern Gent</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+                <div class="product-card" data-id="manwoman11">
+                    <img src="https://picsum.photos/seed/manwoman11/500/736" alt="Man & Woman Product 11">
+                    <span class="brand">Poise & Power</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products / Collections -->
+    <section class="products" style="display: none;">
+        <div class="product-card" data-id="badawii">
+            <img src="assets/product1.jpg" alt="Product 1">
+            <span class="brand">BADAWII</span>
+            <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+        </div>
+        <div class="product-card" data-id="marka2">
+            <img src="assets/product2.jpg" alt="Product 2">
+            <span class="brand">Marka 2</span>
+            <button class="favorite-btn" aria-label="Add to favorites">♡</button>
+        </div>
+        <!-- Daha fazla ürün -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SerWizz </p>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
